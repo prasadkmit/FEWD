@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+  body{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+    form{
+        border:2px solid black;
+        height:80vh;
+        width:60vh;
+        padding:5vh;
+        background-color:#d6daee;
+        border-radius: 10px;
+        font-size: 2vh;
+       
+    }
+    .rating {
+
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 30px;
+      justify-content:start;
+      color:grey;
+    }
+    .rating input{
+      display: none;
+    }
+    .rating input:checked ~ label {
+      color: gold;
+    }
+    button{
+      background-color:#671BC7;
+      color: white;
+      padding:5px;
+    }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div>
+        <form>
+            <h2>Give Your Feedback</h2><br><br>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" ><br><br>
+            
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Enter you mail id" ><br><br>
+
+            <label for="phno">Phone Number : </label>
+            <input type="tel" id="phno" name="phno" placeholder="Enter your phone no" ><br><br>
+            <label>Please Rate Us :</label>
+            <div class="rating">
+                <input type="radio" id="1" name="rating" value="5"><label for="1">★</label>
+                <input type="radio" id="2" name="rating" value="4"><label for="2">★</label>
+                <input type="radio" id="3" name="rating" value="3"><label for="3">★</label>
+                <input type="radio" id="4" name="rating" value="2"><label for="4">★</label>
+                <input type="radio" id="5" name="rating" value="1"><label for="5">★</label>
+            </div>
+            <br><br>
+            <label for="question">Any Question?(optional)</label><br>
+            <textarea id="question" rows="5" cols="50" placeholder="Any question regarding product or service"></textarea>
+            <br><br>
+            <label for="feedback">Your Comments:</label><br>
+            <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Write your Comments here..."></textarea>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
