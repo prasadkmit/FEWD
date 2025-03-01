@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+form {
+  border: 2px solid black;
+  height: 80vh;
+  width: 60vh;
+  padding: 5vh;
+  background-color: #d6daee;
+  border-radius: 10px;
+  font-size: 2vh;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30px;
+  justify-content: start;
+  color: grey;
+}
+.rating input {
+  display: none;
+}
+.rating input:checked ~ label {
+  color: gold;
+}
+button {
+  background-color: #671bc7;
+  color: white;
+  padding: 5px;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
