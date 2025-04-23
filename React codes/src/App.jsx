@@ -1,7 +1,8 @@
 import "./App.css";
 import React from "react";
 // import TextUpdater from './TextUpdater';
-import FocusBlurDemo from "../components/FocusBlur";
+// import FocusBlurDemo from "../components/FocusBlur";
+import MouseEventDemo from "../components/onMouseEvent";
 
 function App() {
   return (
@@ -10,8 +11,12 @@ function App() {
         <TextUpdater />
       </div> */}
 
-      <div>
+      {/* <div>
         <FocusBlurDemo />
+      </div> */}
+
+      <div>
+        <MouseEventDemo/>
       </div>
     </>
   );
