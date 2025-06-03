@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 // import FocusBlurDemo from "../components/FocusBlur";
 // import MouseEventDemo from "../components/onMouseEvent";
 // import Weather from "../components/Weather";
-import ReactLifecycle from "../components/Lifecycle";
+// import ReactLifecycle from "../components/Lifecycle";
+import ApiLifecycle from "../components/apilifecycle"
 
 function App() {
   const [mount, setMount] = useState(true);
@@ -23,9 +24,18 @@ function App() {
       </div> */}
 
       {/* <Weather/> */}
-      <div>
+      {/* <div>
       {mount? <>
         <ReactLifecycle/>
+      </>:<>
+      <div>Component is not avaliable</div>
+      </>
+      }
+      <button onClick={()=> setMount(!mount)}>mount/unmount</button>
+    </div> */}
+      <div>
+      {mount? <>
+        <ApiLifecycle/>
       </>:<>
       <div>Component is not avaliable</div>
       </>
