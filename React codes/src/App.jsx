@@ -5,7 +5,10 @@ import React, { useState } from 'react';
 // import MouseEventDemo from "../components/onMouseEvent";
 // import Weather from "../components/Weather";
 // import ReactLifecycle from "../components/Lifecycle";
-import ApiLifecycle from "../components/apilifecycle"
+// import ApiLifecycle from "../components/apilifecycle"
+// import ContactEmail from "../components/ContactEmail";
+import { UserProvider } from "../components/UserProvider";
+import Login from "../components/Login"
 
 function App() {
   const [mount, setMount] = useState(true);
@@ -33,7 +36,7 @@ function App() {
       }
       <button onClick={()=> setMount(!mount)}>mount/unmount</button>
     </div> */}
-      <div>
+      {/* <div>
       {mount? <>
         <ApiLifecycle/>
       </>:<>
@@ -41,7 +44,11 @@ function App() {
       </>
       }
       <button onClick={()=> setMount(!mount)}>mount/unmount</button>
-    </div>
+    </div> */}
+    {/* <ContactEmail/> */}
+    <UserProvider>
+      <Login />
+    </UserProvider>
     </>
   );
 }
