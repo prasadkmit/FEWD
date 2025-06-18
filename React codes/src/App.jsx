@@ -7,8 +7,10 @@ import React, { useState } from 'react';
 // import ReactLifecycle from "../components/Lifecycle";
 // import ApiLifecycle from "../components/apilifecycle"
 // import ContactEmail from "../components/ContactEmail";
-import { UserProvider } from "../components/UserProvider";
-import Login from "../components/Login"
+// import { UserProvider } from "../components/UserProvider";
+// import Login from "../components/Login"
+import Routing from "../routes/routes"
+
 
 function App() {
   const [mount, setMount] = useState(true);
@@ -46,9 +48,10 @@ function App() {
       <button onClick={()=> setMount(!mount)}>mount/unmount</button>
     </div> */}
     {/* <ContactEmail/> */}
-    <UserProvider>
+    {/* <UserProvider>
       <Login />
-    </UserProvider>
+    </UserProvider> */}
+    <Routing/>
     </>
   );
 }
